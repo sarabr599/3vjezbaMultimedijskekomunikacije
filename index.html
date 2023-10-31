@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Prijava i narudžba</title>
+    <link rel="stylesheet" href="stil.css">
+	
+</head>
+<body>
+	 
+	<form action="">
+	  <fieldset>
+	    <legend><b>Prijava:</b></legend>
+	    <label>Adresa e-pošte</label>
+          <input type="url" name="Adresa e-pošte" placeholder="E-mail">
+	    <label>Željena lozinka</label>
+          <input type="text" name="Željena lozinka" placeholder="Lozinka (najmanje 6 znakova)">
+	    <label>Potvrda lozinke</label>
+          <input type="text" name="Potvrda lozinke" placeholder="Potvrda lozinke">
+	  </fieldset>
+	  <fieldset>
+	    <legend><b>Osobni podaci:</b></legend>
+        <label for="ime">Ime</label>
+          <input type="text" placeholder="Vaše ime" >
+        <label for="prezime">Prezime</label>
+          <input type="text" placeholder="Vaše prezime" >
+		<label for="rodjendan">Datum rođenja</label>
+          <input type="date" id="rodjendan">
+	  </fieldset>
+      <fieldset>
+          <legend><b>Spol:</b></legend>
+          <input type="radio" value="M" id="M" name="spol"><label for="M">muški</label> 
+          <input type="radio" value="F" id="F" name="spol"><label for="F">ženski</label>
+      </fieldset>
+	  
+      
+          <input type="reset" value="Poništi">
+          <input type="submit" value="Prihvati">
+	  
+	  
+	  <fieldset>
+	   <legend><b>Odaberi artikl:</b></legend>
+	    <label>Žene</label>
+         <input type="checkbox" name="nakit" value="ogrlica">Ogrlice<br>
+         <input type="checkbox" name="nakit" value="naušnica">Naušnice<br> 
+	     <input type="checkbox" name="nakit" value="narukvica">Narukvice<br>
+	     <input type="checkbox" name="nakit" value="prsten">Prstenje<br>
+	     <input type="checkbox" name="nakit" value="sat">Satovi<br>
+	    <label>Muškarci</label>
+         <input type="checkbox" name="nakit" value="ogrlica">Narukvice<br>
+         <input type="checkbox" name="nakit" value="naušnica">Ogrlice<br> 
+	     <input type="checkbox" name="nakit" value="sat">Satovi<br>
+	    <label>Odaberite boju proizvoda</label>
+          <input type="color" id="boja" name="boja"><br>
+		<textarea rows="10" cols="63">Unesite željene odabire i napomene:</textarea>
+		
+	  </fieldset>
+	  <fieldset>
+	   <legend><b>Plaćanje i dostava:</b></legend>
+	     <label>Odaberi način plaćanja</label>
+         <input list="visa" name="visa">
+		 <datalist id="visa">
+           <select name="izbor">
+            <option>Visa</option>
+			<option>Premium Visa</option>
+            <option>Mastercard</option>
+            <option>Maestro</option>
+			<option>Diners club</option>
+           </select>
+	     </datalist>
+	    <label>Odaberi vrijeme dostave</label>
+	      <input type="time" name="vrijeme">
+	  </fieldset>
+    
+	  <input type="button" value="Naruči" onclick="alert('Jeste li sigurni?')">
+	</form>
+	 
+</body>
+</html>
